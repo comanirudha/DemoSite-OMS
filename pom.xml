@@ -11,6 +11,7 @@
     <url>http://www.blc-archetype.com</url>
     <properties>
         <blc.version>2.3.0-SNAPSHOT</blc.version>
+        <blc.oms.version>1.0.0-SNAPSHOT</blc.oms.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <gwt.version>2.4.0</gwt.version>
     </properties>
@@ -173,7 +174,16 @@
             </dependency>
 
             <!--Broadleaf libraries -->
-            <dependency>
+      
+   <dependency>
+                 <groupId>com.broadleafcommerce</groupId>
+                 <artifactId>broadleaf-oms</artifactId>
+                 <version>${blc.oms.version}</version>
+                 <type>jar</type>
+                 <scope>compile</scope>
+             </dependency>
+
+      <dependency>
                 <groupId>org.broadleafcommerce</groupId>
                 <artifactId>broadleaf-common</artifactId>
                 <version>${blc.version}</version>

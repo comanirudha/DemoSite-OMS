@@ -19,5 +19,5 @@
         http://www.springframework.org/schema/aop/spring-aop-3.1.xsd">
         
         <!-- Shared properties between admin and core go here -->
-        
+       
 </beans>

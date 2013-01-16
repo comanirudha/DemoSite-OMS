@@ -139,4 +139,21 @@
     </bean>
     -->
     
+         <!-- Shared properties between admin and core go here -->
+        <bean id="blCheckoutWorkflow" class="org.broadleafcommerce.core.workflow.SequenceProcessor">
+                 <property name="processContextFactory">
+             <bean class="org.broadleafcommerce.core.checkout.service.workflow.CheckoutProcessContextFactory"/>
+         </property>
+         <property name="activities">
+             <list>
+                 <bean class="org.broadleafcommerce.core.offer.service.workflow.VerifyCustomerMaxOfferUsesActivity"/>
+                 <bean class="org.broadleafcommerce.core.checkout.service.workflow.PaymentServiceActivity"/>
+                 <bean class="org.broadleafcommerce.core.offer.service.workflow.RecordOfferUsageActivity"/>
+                 <bean class="org.broadleafcommerce.core.checkout.service.workflow.CompleteOrderActivity"/>
+                 <bean class="com.broadleafcommerce.oms.fulfillment.service.workflow.activity.CreateFulfillmentOrderActivity"/>
+             </list>
+         </property>
+         <property name="defaultErrorHandler" ref="blDefaultErrorHandler"/>
+     </bean>
+    
 </beans>
