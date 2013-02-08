@@ -27,3 +27,14 @@ insert into BLC_DATA_DRVN_ENUM_VAL values (12,'RECEIVED_WRONG_ITEM',false,'RECEI
 insert into BLC_DATA_DRVN_ENUM_VAL values (13,'NOT_WHAT_I_WANTED',false,'NOT_WHAT_I_WANTED',2);
 insert into BLC_DATA_DRVN_ENUM_VAL values (14,'CHANGED_MY_MIND',false,'CHANGED_MY_MIND',2);
 insert into BLC_DATA_DRVN_ENUM_VAL values (15,'OTHER',false,'OTHER',2);
+
+
+insert into BLC_DATA_DRVN_ENUM values (3,'SHIPPER_TYPE',true);
+
+
+insert into BLC_DATA_DRVN_ENUM_VAL values (20,'DEFAULT',false,'DEFAULT',3);
+insert into BLC_DATA_DRVN_ENUM_VAL values (21,'FEDEX_GROUND',false,'FEDEX_GROUND',3);
+
+insert into BLC_DATA_DRVN_ENUM_VAL values (22,'UPS',false,'UPS',3);
+insert into BLC_DATA_DRVN_ENUM_VAL values (23,'UPS_OVERNIGHT',false,'UPS_OVERNIGHT',3);
+insert into BLC_DATA_DRVN_ENUM_VAL values (24,'DHL',false,'DHL',3);
