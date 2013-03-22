@@ -156,6 +156,8 @@
             <classPathApplicationContext path="bl-profile-applicationContext-persistence.xml"/>
             <!--add in additional persistence configuration for our core -->
             <classPathApplicationContext path="applicationContext.xml"/>
+        	<!--add module specific context file-->
+        	 <classPathApplicationContext path="bl-oms-applicationContext.xml"/>
             <!--see description for my.app.context above -->
             <fileSystemApplicationContext path="src/main/webapp/WEB-INF/applicationContext.xml"/>
             <!--select the dialects and persistence units to export-->
@@ -216,6 +218,8 @@
                 <!--add in additional persistence configuration related to the profile -->
                 <classPathApplicationContext path="bl-profile-applicationContext-persistence.xml"/>
                 <!--add in additional persistence configuration for our core -->
+            	<!--add module specific context file-->
+            	             <classPathApplicationContext path="bl-oms-applicationContext.xml"/>
                 <classPathApplicationContext path="applicationContext.xml"/>
                 <!--see description for my.app.context above -->
                 <fileSystemApplicationContext path="src/main/webapp/WEB-INF/applicationContext.xml"/>
